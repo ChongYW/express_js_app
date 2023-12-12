@@ -1,0 +1,11 @@
+<!-- Create a page for listing the grocery list -->
+<h1>Grocery List</h1>
+<ul>
+    <% groceries.forEach(function(grocery) { %>
+        <li>
+            <a href="/groceries/<%= grocery.id %>">
+                <%= grocery.item %>
+            </a>
+        </li>
+    <% }); %>
+</ul>
